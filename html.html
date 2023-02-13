@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamOne</title>
+    <link rel="stylesheet" href="css.css" />
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div class="table"> 
+        <table >
+            <tr>
+                Kill The Monster
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+    
+        
+        <div class="Monster">
+            <b><label for="Monster_health" style="color:black">Monster Health</label></b>
+            <div id="ProgressBar1">
+               <div id="FilledPB1" ></div>
+            </div>
+        </div>
+        <br>
+        
+        <div class="Myself">
+            <b><label for="Your_health"  style="color:black">Your Health</label></b>
+            <div id="ProgressBar2">
+                <div id="FilledPB2" ></div>
+             </div>
+        </div>
+        
+        
+        <div class="Choices">
+         <button class="btn btn1" id="Attack-btn" onclick=" Attack()" >ATTACK</button>
+         <span></span>
+         <button class="btn btn2" id="SpecialAttack-btn" onclick=" SpecialAttack()">SPECIAL ATTACK</button>
+         <button class="btn btn3" id="Heal-btn" onclick=" Heal()">HEAL</button>
+         
+         <button class="btn btn4" id="GiveUp-btn" onclick=" GiveUp()">GIVE UP</button>
+         
+        </div>
+      <div class="battleLog">
+      <h3>Battle Log</h3>
+      <p id="dialogbox"></p>
+
+
+      </div>
+
+    </div>
+ 
+          
+</body>
+<script>document.getElementById("btn btn1").addEventListener("click", Attack());</script>
+
+</html>
