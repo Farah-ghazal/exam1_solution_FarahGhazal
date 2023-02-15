@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamOne</title>
+    <link rel="stylesheet" href="css.css" />
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div class="table"> 
+        <table >
+            <tr>
+                Kill The Monster
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+    
+        
+        <div class="Monster">
+            <b><label for="Monster_health" style="color:black">Monster Health</label></b>
+            <div class="ProgressBar1">
+               <div class="FilledPB1" ></div>
+            </div>
+        </div>
+        <br>
+        
+        <div class="Myself">
+            <b><label for="Your_health"  style="color:black">Your Health</label></b>
+            <div class="ProgressBar2">
+                <div class="FilledPB2" ></div>
+             </div>
+        </div>
+        
+        
+        <div class="Choices">
+        <input type="button" onclick="Attack()" id="Attack-btn" class="btn " class="btn1" value="ATTACK" >
+        
+         <span></span>
+         <input type="button" onclick="SpecialAttack()" id="SpecialAttack-btn" class="btn " class="btn2" value="SPECIAL ATTACK" >
+         <input type="button" onclick="Heal()" id="Heal-btn" class="btn " class="btn3" value="HEAL" >
+         <input type="button" onclick="GiveUp()" id="GiveUp-btn" class="btn " class="btn2" value="GIVE UP" >
+         
+         
+         
+        </div>
+        <br>
+        <br>
+        <span id="StartNewGame"></span>
+      <div class="battleLog">
+      <h3 id="demo">Battle Log</h3>
+      <p id = "result" >    </p>
+      <div id="line">
+      <p id ="subject1" class="child">    </p> <p id ="verb1" class="child">    </p>  <p id ="object1" class="child">    </p>
+      </div>
+      <div id="line">
+        <p id ="subject2" class="child">    </p> <p id ="verb2" class="child">    </p>  <p id ="object2" class="child">    </p>
+        </div>
+        <div id="line">
+            <p id ="subject3" class="child">    </p> <p id ="verb3" class="child">    </p>  <p id ="object3" class="child">    </p>
+            </div>
+
+      </div>
+
+    </div>
+ 
+          
+</body>
+
+
+</html>
