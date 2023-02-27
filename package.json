@@ -1,0 +1,18 @@
+{
+  "name": "examtwo",
+  "version": "1.0.0",
+  "description": "URL shorten API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "Farah Ghazal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
